@@ -3,7 +3,10 @@
     "identity": "RisaI.Xamarin.Android",
     "groupIdentity": "RisaI.Xamarin",
     "author": "Richard Ivánek",
-    "classifications": [ "Xamarin" ],
+    "classifications": [ "Xamarin", "Android" ],
+    "tags": {
+      "language": "C#"
+    },
     "name": "Xamarin Android minimal template",
     "shortName": "xandroid",
     "guids": [ "6762E9D8-DDEC-4D81-BF13-6549BA8C588D" ],
