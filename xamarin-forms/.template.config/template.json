@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "identity": "RisaI.Xamarin.Forms",
+    "author": "Richard Ivánek",
+    "classifications": [ "Xamarin", "Android" ],
+    "tags": {
+      "language": "C#"
+    },
+    "name": "Xamarin Forms minimal template",
+    "shortName": "xforms",
+    "guids": [ "6762E9D8-DDEC-4D81-BF13-6549BA8C588D", "769AD825-8708-4FFF-BE54-8A970E20A34F" ],
+    "sourceName": "XamarinForms"
+  }
