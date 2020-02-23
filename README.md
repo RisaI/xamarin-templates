@@ -6,7 +6,7 @@ This repo contains installable templates for Xamarin related projects to be used
 1. Run `make install` or manually call `dotnet new -i TEMPLATE` for any template you are interested in.
 1. Create a new project by calling `dotnet new SHORT`, all available templates can be listed with `dotnet new -l`.
 
-## Using a project created ftom the template
+## Using a project created from the template
 The project can be built using `msbuild` (use the parameter `/t:install` to send it to a device over ADB). This requires Xamarin.Android SDKs to be present on your system and also that you have the `platforms;android-28` Android SDK installed. 
 
 ### Minimal installation on Arch Linux
@@ -17,3 +17,6 @@ You need these packages to use these templates on Arch:
 - `platforms;android-28` installed using `/opt/android-sdk/tools/bin/sdkmanager` shipped with `android-sdk`
 
 If you run into issues with `libzip.so.4` missing, just create a symbolic link to the newer version via `ln -s /usr/lib/libzip.so.5 /usr/lib/libzip.so.4`.
+
+### Getting it working with VS Code and Omnisharp
+Once you create a project from the template, you are likely going to have issues with Omnisharp not being able to locate the correct targets. That is because the default `MSBuildExtensionsPath` used by the Omnisharp extension points to a custom directory. To fix this issue, copy the provided `omnisharp.json` file to the project root.
